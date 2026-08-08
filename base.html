@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Hub: Japonya</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script
+      type="module"
+      src="https://cdn.spline.design/@splinetool/hana-viewer@1.2.54/hana-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Her sayfada görünecek Navbar -->
+    <nav class="navbar">
+      <div class="logo">DevJapan</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Ana Sayfa</a></li>
+        <li><a href="{{ url_for('about') }}">Ülke Tanıtımı</a></li>
+        <li><a href="{{ url_for('jobs') }}">Yazılım Olanakları</a></li>
+        <li><a href="{{ url_for('contact') }}">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <!-- Diğer sayfaların içeriklerinin geleceği dinamik alan -->
+    <main>{% block content %} {% endblock %}</main>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<header class="hero">
+  <div class="hero-content">
+    <h1>Geleceğin Kodlandığı Yer:<br /><span>Japonya</span></h1>
+    <p>
+      Geleneksel kültürün, fütüristik teknolojilerle buluştuğu noktayı keşfedin.
+      Yazılım dünyasında sınırları zorlayın.
+    </p>
+    <a href="{{ url_for('jobs') }}" class="btn">Kariyer Fırsatlarını Gör</a>
+  </div>
+  <div class="hero-3d">
+    <hana-viewer
+      url="https://prod.spline.design/Wk951Gx89ItyIaoV-747/scene.hanacode"
+    ></hana-viewer>
+  </div>
+</header>
+{% endblock %}

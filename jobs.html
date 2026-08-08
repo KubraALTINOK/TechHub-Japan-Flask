@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<section class="page-section opportunities">
+  <h2>Yazılım Sektörü ve İş Olanakları</h2>
+  <div class="cards">
+    <!-- app.py'den gelen verileri döngü ile yazdırıyoruz -->
+    {% for job in jobs %}
+    <div class="card glass">
+      <div class="icon">{{ job.icon }}</div>
+      <h3>{{ job.title }}</h3>
+      <p>{{ job.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

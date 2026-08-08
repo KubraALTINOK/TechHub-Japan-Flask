@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<section class="page-section">
+  <h2>Bize <span>Ulaşın</span></h2>
+  <div class="glass-panel form-container">
+    <form action="#">
+      <input type="text" placeholder="Adınız Soyadınız" class="glass-input" />
+      <input type="email" placeholder="E-posta Adresiniz" class="glass-input" />
+      <textarea
+        rows="5"
+        placeholder="Mesajınız..."
+        class="glass-input"
+      ></textarea>
+      <button type="submit" class="btn">Gönder</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
